@@ -1,0 +1,9 @@
+{{>layouts/header}}
+
+{{#noticeDTO}}
+    <a href="/notice/{{id}}/info">{{id}}, {{title}}, {{body}} </a> <br>
+    <br>
+{{/noticeDTO}}
+<br>
+<a href="/notice/create">공지사항 작성</a>
+{{>layouts/footer}}

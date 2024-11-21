@@ -1,0 +1,9 @@
+{{>layouts/header}}
+
+Id, Title, Content <br>
+
+    {{#articleList}}
+        {{id}}, <a href="/articles/{{id}}">{{title}}</a>, {{content}} <br>
+    {{/articleList}}
+<a href="/articles/new">New Article</a>
+{{>layouts/footer}}

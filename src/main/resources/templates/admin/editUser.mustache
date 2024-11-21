@@ -1,0 +1,16 @@
+<h1>사용자 수정</h1>
+{{#user}}
+<form action="/admin/users/edit/{{id}}" method="post">
+    <label for="loginId">로그인 ID:</label>
+    <input type="text" id="loginId" name="loginId" value="{{loginId}}" required><br>
+
+    <label for="password">비밀번호:</label>
+    <input type="password" id="password" name="password" value="{{password}}" required><br>
+
+    <label for="nickname">닉네임:</label>
+    <input type="text" id="nickname" name="nickname" value="{{nickname}}" required><br>
+
+    <button type="submit">저장</button>
+</form>
+{{/user}}
+<a href="/admin/users">뒤로</a>

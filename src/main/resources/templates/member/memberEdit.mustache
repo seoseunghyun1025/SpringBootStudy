@@ -1,0 +1,15 @@
+{{>layouts/header}}
+
+{{#member}}
+    <form action="/member/{{email}}/edit" method="post">
+
+        <input type="email" name="email" value="{{email}}">
+        <input type="password" name="password" value="{{password}}">
+        <input type="text" name="name" value="{{name}}">
+        <button type="submit">수정
+        </button>
+    </form>
+{{/member}}
+
+
+{{>layouts/footer}}

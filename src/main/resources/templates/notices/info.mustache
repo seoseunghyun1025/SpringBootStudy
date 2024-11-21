@@ -1,0 +1,14 @@
+{{>layouts/header}}
+
+{{#notice}}
+    <form action="/notice/{{id}}/edit" method="post">
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="text" name="title" value="{{title}}">
+        <textarea name="body">{{body}}</textarea>
+        <button type="submit">수정</button>
+    </form>
+{{/notice}}
+<a href="/notice/{{id}}/delete" style="color:red">삭제</a> <br>
+<br>
+<a href="/notice">뒤로 가기</a>
+{{>layouts/footer}}

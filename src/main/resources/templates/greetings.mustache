@@ -1,0 +1,8 @@
+{{>layouts/header}}
+{{^nickname}}
+    <h1> 비회원님, 환영합니다. </h1>
+{{/nickname}}
+{{#nickname}}
+    <h1>{{nickname}}님, 환영합니다.</h1>
+{{/nickname}}
+{{>layouts/footer}}

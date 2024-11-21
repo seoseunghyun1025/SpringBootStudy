@@ -1,0 +1,10 @@
+{{>layouts/header}}
+
+<form action="/notice/create" method="post">
+    <input type="hidden" name="userId" value="{{#userId}}{{userId}}{{/userId}}">
+    <input type="text" name="title" placeholder="제목을 작성하시오"> <br>
+    <textarea name="body" placeholde="내용을 작성하시오"></textarea>
+    <button type="submit">작성</button>
+</form>
+
+{{>layouts/footer}}

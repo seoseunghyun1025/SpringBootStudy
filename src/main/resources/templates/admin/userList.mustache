@@ -1,0 +1,20 @@
+<table>
+    <tbody>
+    {{^users}}
+        "empty or null"
+    {{/users}}
+    {{#users}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{loginId}}</td>
+            <td>{{nickname}}</td>
+            <td>
+                <a href="/admin/users/edit/{{id}}">수정</a>
+                <form action="/admin/users/delete/{{id}}" method="post" style="display:inline;">
+                    <button type="submit">삭제</button>
+                </form>
+            </td>
+        </tr>
+    {{/users}}
+    </tbody>
+</table>

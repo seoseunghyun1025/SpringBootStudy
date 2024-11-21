@@ -1,0 +1,17 @@
+﻿{{>layouts/header}}
+
+<form action="/articles/create" method="post">
+    <input type="hidden" value="{{#userId}}{{userId}}{{/userId}}">
+    <div class="mb-3">
+        <label class="form-label">제목: </label>
+        <input type="text" class="form-control" name="title"><br>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용: </label>
+        <textarea  class="form-control" rows="3" name="content"></textarea><br>
+    </div>
+    <button type="submit" class="btn btn-primary"> 확인</button>
+    <a href="/articles">back</a>
+</form>
+
+{{>layouts/footer}}
